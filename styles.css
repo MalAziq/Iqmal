@@ -1,0 +1,183 @@
+/* Reset default margin and padding */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #402E7A; /* Set the background color */
+    font-family: 'Roboto', Arial, sans-serif; /* Apply Roboto font */
+}
+
+/* Base styles */
+body {
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    padding: 2rem;
+    margin: 50px 0; /* Adjusted to 50px margin top and bottom */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff; /* Background color for sections */
+    border-radius: 8px; /* Optional: Add rounded corners to sections */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 100px 0;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.about-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#experiences {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0; /* Increased padding for better spacing */
+    margin-top: 50px; /* Adjusted to 50px margin top */
+    margin-bottom: 50px; /* Adjusted to 50px margin bottom */
+}
+
+#experiences .experience {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#experiences .experience h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+#experiences .experience .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#experiences .experience .gallery img,
+#experiences .experience .gallery video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+    margin-bottom: 2rem;
+    text-align: center; /* Center align the section headers */
+}
+
+.contact {
+    padding: 4rem 2rem; /* Increased padding for better spacing */
+    text-align: center; /* Center align text in contact section */
+    margin-bottom: 50px; /* Add 50px margin bottom to create gap with footer */
+}
+
+.contact h2 {
+    margin-bottom: 2rem; /* Optional: Adjust margin as needed */
+    text-align: center; /* Center align the h2 text */
+}
+
+.contact-links {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.contact-links a {
+    display: inline-block;
+    margin: 0.5rem;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-links a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 0.5rem;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #333;
+    color: #fff;
+}

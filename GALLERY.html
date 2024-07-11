@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include SimpleLightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.2/simple-lightbox.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .slideshow {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Adjust height to fill the viewport */
+            overflow: hidden;
+        }
+        .slideshow img {
+            width: 100%; /* Ensure image fills the container */
+            height: 100%; /* Ensure image fills the container */
+            object-fit: cover; /* Maintain aspect ratio and cover entire container */
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            filter: blur(10px); /* Apply blur effect */
+        }
+        .slideshow img.active {
+            opacity: 1;
+        }
+        .slideshow-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1;
+            color: black; /* Set text color to black */
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 columns */
+            gap: 10px; /* Adjust gap between images */
+            padding: 20px; /* Adjust padding */
+            margin-top: 40px; /* Add margin to separate from slideshow */
+            border: 2px solid #ccc; /* Add border */
+            border-radius: 10px; /* Optional: Rounded border */
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .gallery-item img {
+            width: 120%; /* 20% bigger */
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1); /* Zoom effect on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#a-story">A Story</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="slideshow">
+            <img src="img\masscomm\IMG_2451-1.jpg" alt="Slideshow Image 1" class="active">
+            <img src="img\gameinc\IMG_0455.jpg" alt="Slideshow Image 2">
+            <img src="img\slideshow\IMG_9083.jpg" alt="Slideshow Image 3">
+            <img src="img\slideshow\IMG_7471-1.jpg" alt="Slideshow Image 4">
+            <img src="img\slideshow\IMG_7839-1.jpg" alt="Slideshow Image 5">
+            <div class="slideshow-text">Gallery</div>
+        </div>
+
+        <section class="gallery">
+            <!-- Replace img tags with a tags -->
+            <div class="gallery-item">
+                <img src="img\gallery\_MG_7824.JPG" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="img\gallery\_MG_7854.JPG" alt="Gallery Image 2">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\_MG_7859.JPG" alt="Gallery Image 3">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_0454.jpg" alt="Gallery Image 4">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_4653-1.jpg" alt="C:\Users\Mal\Desktop\WEB PORTFOLIO\img\gallery\IMG_4653-1.jpg">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_0903.jpg" alt="Gallery Image 6">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_0908.jpg" alt="Gallery Image 7">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_0982.jpg" alt="Gallery Image 8">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_1052.jpg" alt="Gallery Image 9">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_1152.jpg" alt="Gallery Image 10">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\_MG_7922.jpg" alt="Gallery Image 11">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_7322-1.jpg" alt="Gallery Image 12">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_7471-1.jpg" alt="Gallery Image 13">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_1236-1.jpg" alt="Gallery Image 14">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_4653-1.jpg" alt="Gallery Image 15">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_1780-1.jpg" alt="Gallery Image 16">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_5313-Enhanced-NR-1.jpg" alt="Gallery Image 17">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_8609.jpg" alt="Gallery Image 18">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_8843.jpg" alt="Gallery Image 19">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_9060.jpg" alt="Gallery Image 20">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_7839-1.jpg" alt="Gallery Image 21">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_8595.jpg" alt="Gallery Image 22">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_8845.jpg" alt="Gallery Image 23">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_8552-1.jpg" alt="Gallery Image 24">
+            </div>
+            <!-- Repeat for all 25 images -->
+            <div class="gallery-item">
+                <img src="img\gallery\IMG_4549-1.jpg" alt="Gallery Image 25">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 IQMAL. All rights reserved.</p>
+    </footer>
+
+    <!-- Include SimpleLightbox JavaScript -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.2/simple-lightbox.min.js"></script>
+    <script>
+        // JavaScript for slideshow functionality
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll('.slideshow img');
+            const interval = 2000; // Change image every 2 seconds
+
+            let index = 0;
+            setInterval(() => {
+                images[index].classList.remove('active');
+                index = (index + 1) % images.length;
+                images[index].classList.add('active');
+            }, interval);
+        });
+    </script>
+</body>
+</html>
